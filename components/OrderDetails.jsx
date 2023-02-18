@@ -11,16 +11,16 @@ const OrderDetails = ({total, createOrder}) => {
         <div className='md:w-[500px] w-[300px] bg-white rounded-lg z-50  flex flex-col p-[30px] items-center justify-center'>
             <h1 className='font-bold'>You will pay $50.99 after delivery</h1>
             <div className='flex flex-col w-full mb-[15px]'>
-              <label className='mb-[10px]' htmlFor="Name">Name Surname</label>
-              <input   onChange={(event)=>setCustomer(event.target.value)} placeholder='Stanley Arthur' className=' h-[40px] border focus:outline-none' type="text"  />
+              <label className='mb-[10px]' htmlFor="Name">Name</label>
+              <input   onChange={(event)=>setCustomer(event.target.value)} placeholder='Your Name' className=' h-[40px] border focus:outline-none' type="text"  />
             </div>
             <div className='flex flex-col w-full mb-[15px]'>
             <label htmlFor="Phone Number" className='mb-[10px]'>Phone Number</label>
-              <input type="text" placeholder='0547082558' className=' border focus:outline-none h-[40px]'/>
+              <input type="text" placeholder='' className=' border focus:outline-none h-[40px]'/>
             </div>
             <div className='flex flex-col w-full mb-[15px]'>
               <label className='mb-[10px]' htmlFor="Address">Address</label>
-              <textarea rows={5}  onChange={(event)=>setAddress(event.target.value)} placeholder='Achimota 3rd street' className='border focus:outline-none' type="text"  />
+              <textarea rows={5}  onChange={(event)=>setAddress(event.target.value)} placeholder='' className='border focus:outline-none' type="text"  />
             </div>
             <button className='bg-teal-600  text-white  font-bold text-[10px] cursor-pointer   px-10 py-3 rounded-lg' onClick={handleClick}>Order</button>
         </div> 

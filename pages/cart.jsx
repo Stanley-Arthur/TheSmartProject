@@ -4,10 +4,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from "react";
 import {PayPalScriptProvider, PayPalButtons, usePayPalScriptReducer} from "@paypal/react-paypal-js";
 import dynamic from 'next/dynamic'
-import axios from 'axios';
 import { useRouter } from 'next/router';
 import { reset } from '@/redux/cartSlice';
-import OrderDetails from '@/components/orderDetails';
+import OrderDetails from '@/components/OrderDetails';
 
 
 const  Cart=()=> {
@@ -47,7 +46,7 @@ const  Cart=()=> {
 
 
     // Custom component to wrap the PayPalButtons and handle currency changes
-    const ButtonWrapper = ({ currency, showSpinner , dispatch,options}) => {
+    const ButtonWrapper = ({ currency, showSpinner ,options}) => {
         // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
         // This is the main reason to wrap the PayPalButtons in a new component
         const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
@@ -60,7 +59,7 @@ const  Cart=()=> {
                     currency: currency
                 }
             });
-        }, [currency, showSpinner,dispatch,options]);
+        }, [currency, showSpinner,options]);
 
 
         return (<>
