@@ -13,10 +13,10 @@ const NavItems = () => {
     {title:"Home ",path:"/"},
     {title:"TechSupport",path:"#techsupport"},
     {title:"Services",icon:<RiArrowDropDownFill size={25} />,submenu:true,subItems:[
-      {title:"Managed Services",path:"/managedservices" },
+      {title:"ManagedServices",path:"/managedservices" },
       {title:"Cybersecurity",path:"/cybersecurity" },
-      {title:"Cloud Services",path:"/cloudservices" },
-      {title:"Our Approach",path:"/approach" },
+      {title:"CloudServices",path:"/cloudservices" },
+      {title:"OurApproach",path:"/approach" },
     ]
   },
   
@@ -43,7 +43,7 @@ const NavItems = () => {
             </ul>
              {
               menu.submenu && submenuOpen && (
-                <div className='text-sm mt-12 ml-2   lg:bg-black/50 min-w-52 px-10 h-44 pl-5 cursor-pointer lg:absolute top-6 z-20'>
+                <div className='text-sm md:mt-12 ml-6  lg:bg-black/50  min-w-52  px-10 h-44 pl-5 cursor-pointer lg:absolute  top-16 z-20'>
                   {menu.subItems.map((subItem, index)=>(
                     <div  key={subItem.id || index} className='pt-3 '>
                       <Link  href={subItem.path} className='md:text-xl  py-3 px-4 rounded uppercase hover:border-l-4  hover:border-l-yellow-600' >{subItem.title}</Link>

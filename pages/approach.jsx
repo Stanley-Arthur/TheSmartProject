@@ -15,7 +15,7 @@ const Approach = () => {
        
         <div className='absolute space-y-8 top-[40%] left-[25%] '>
           <div className='flex flex-col space-y-2 justify-center items-center'>
-            <h2 className='text-white text-3xl font-bold  font-sans '>Our Unique Approach to Providing IT Services</h2>
+            <h2 className='text-white text-4xl font-bold  font-sans '>Our Unique Approach to Providing IT Services</h2>
             <p className='text-white text-xl font-semibold '>Partnership, Service, Growth, People</p>
           </div>
           <div className='flex flex-col items-center justify-center'>

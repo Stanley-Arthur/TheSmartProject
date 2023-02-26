@@ -36,7 +36,7 @@ const Feature = () => {
       // }}
       // pagination={true}
       autoplay={{
-        delay:4000,
+        delay:5000,
         disableOnInteraction:false,
       }}
       className="duration-1000  ease-in-out transition-opacity"

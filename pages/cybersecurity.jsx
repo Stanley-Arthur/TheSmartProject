@@ -192,14 +192,16 @@ const cybersecurity = () => {
         </div>
          
   
-      </div>
-        
+      </div> 
       <CyberCard/>
-     
-      
-
-      
     </div>
+
+
+
+
+
+    
+
   )
 }
 

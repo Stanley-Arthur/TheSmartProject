@@ -31,7 +31,7 @@ const Navbar = () => {
     }
   return (
     
-     <div className=' fixed w-full  h-32 shadow-xl z-[100] bg-gray-900 '>
+     <div className=' fixed w-full font-bold h-32 shadow-xl z-[100] bg-gray-900 '>
         <div className=' flex xl:justify-between justify-between  items-center w-full h-full  px-2 2xl:px-16'>
             <div className='text-white  mr-9 w-[120px] h-[120px]  '>
             <Image alt='' src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex flex-col gap-y-3'>
                     <NavItems/> 
-                    <div className='flex flex-col gap-y-10'>
+                    <div className='flex flex-col ml-10 gap-y-10'>
                       {data?.user ? (                
                       <span className='text-black uppercase  hover:border-b-4 hover:border-b-yellow-600' style={{cursor:"pointer"}} onClick={()=>logOut()} >Logout</span>  
                        ): (
