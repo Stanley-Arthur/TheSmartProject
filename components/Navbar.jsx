@@ -17,10 +17,10 @@ const Navbar = () => {
     const {data} = useSession()
     const router =useRouter()
 
-    const logOut=()=>{
-        Cookies.remove('loggedin')
-       router.push('/login')
-    }
+    // const logOut=()=>{
+    //     Cookies.remove('loggedin')
+    //    router.push('/login')
+    // }
     
 
     const quantity =useSelector(state=> state.cart.quantity)
@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     
      <div className=' fixed w-full font-bold h-32 shadow-xl z-[100] bg-gray-900 '>
-        <div className=' flex xl:justify-between justify-between  items-center w-full h-full  px-2 2xl:px-16'>
+        <div className=' flex xl:justify-around justify-between  items-center w-full h-full  px-2 2xl:px-16'>
             <div className='text-white  mr-9 w-[120px] h-[120px]  '>
             <Image alt='' src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
             </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <div onClick={handleNav} className='md:hidden text-white' >
                 <AiOutlineMenu size={25 }/>
             </div>
-            <div className='hidden md:block'>
+            {/* <div className='hidden md:block'>
                 {data?.user ? (                
                 <span className='text-white uppercase hover:border-b-4  hover:border-b-yellow-600' style={{cursor:"pointer"}} onClick={()=>logOut()} >Logout</span>  
                 ): (
@@ -51,8 +51,8 @@ const Navbar = () => {
                  <Link href="/login" className="text-white uppercase  hover:border-b-4  hover:border-b-yellow-600 cursor-pointer" >Login</Link>
                  </span>
                 )}
-            </div>
-          
+            </div> */}
+{/*           
             <div>
             <Link href="/cart">
                 <div className='md:relative xl:relative'>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     </div>  
                 </div>
             </Link>
-            </div>
+            </div> */}
 
         </div>
         <div className={nav?`md:hidden fixed left-0 top-0 w-full h-screen bg-black/70`:""}>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex flex-col gap-y-3'>
                     <NavItems/> 
-                    <div className='flex flex-col ml-10 gap-y-10'>
+                    {/* <div className='flex flex-col ml-10 gap-y-10'>
                       {data?.user ? (                
                       <span className='text-black uppercase  hover:border-b-4 hover:border-b-yellow-600' style={{cursor:"pointer"}} onClick={()=>logOut()} >Logout</span>  
                        ): (
@@ -92,7 +92,7 @@ const Navbar = () => {
                        <Link href="/login" className="text-black uppercase  hover:border-b-4 hover:border-b-yellow-600 cursor-pointer" >Login</Link>
                       </span>
                         )}
-                    </div>
+                    </div> */}
                      
                     <div className='pt-[40] mt-6'>
                         <p className=' uppercase tracking-widest text-[#5651e5]'>Lets connect</p>

@@ -20,7 +20,7 @@ const NavItems = () => {
     ]
   },
   
-  {title:"Products",path:"/products"},
+  // {title:"Products",path:"/products"},
   {title:"Contact",path:"/contact"},
    
   ]
