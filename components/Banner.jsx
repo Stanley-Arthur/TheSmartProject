@@ -38,10 +38,10 @@ const Banner = () => {
             <div className='flex '>
 
                 <div className='text-black flex gap-2  justify-center items-center'>
-                    {menus.map((menu)=>(
+                    {menus.map((menu, index)=>(
                         <div>
                             <div className="px-3 text-left md:cursor-pointer group">
-                                <div className=' inline-flex  items-center'>
+                                <div key={index} className=' inline-flex  items-center'>
                                     {menu.icon}
                                     <h1 className='py-7 flex  pl-2 justify-between  text-xl  font-semibold text-blue-500 items-center md:pr-0 pr-5 group'>
                                         {menu.title}
@@ -58,8 +58,8 @@ const Banner = () => {
                                                 </div>
                                                 <div className="bg-blue-400 p-5 grid grid-cols-3 gap-10">
                                                     {
-                                                        menu.subItems.map(( mysubItems)=>(
-                                                            <div className='text-white'>
+                                                        menu.subItems.map(( mysubItems, index)=>(
+                                                            <div key={index} className='text-white'>
                                                                 <h1 className="text-xl  hover:text-blue-900 font-semibold">
                                                                     {mysubItems.Head}
                                                                 </h1>
