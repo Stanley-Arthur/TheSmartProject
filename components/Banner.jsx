@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React from 'react'
 import {AiOutlineMail} from 'react-icons/ai'
 import {AiOutlineMobile} from 'react-icons/ai'
 import {ImOffice} from "react-icons/im"
@@ -7,8 +7,6 @@ import {ImOffice} from "react-icons/im"
 
 
 const Banner = () => {
-    const [heading, setHeading] = useState("");
-    const [subHeading, setSubHeading] = useState("");
 
     const menus=[
         {title:"Our Offices",icon:<ImOffice size={25}/>,submenu:true,
