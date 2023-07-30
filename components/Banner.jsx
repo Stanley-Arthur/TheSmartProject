@@ -1,7 +1,6 @@
 import React ,{useState} from 'react'
 import {AiOutlineMail} from 'react-icons/ai'
-import {AiOutlineMobile,AiOutlineClockCircle} from 'react-icons/ai'
-import Link from 'next/link'
+import {AiOutlineMobile} from 'react-icons/ai'
 import {ImOffice} from "react-icons/im"
 
 
