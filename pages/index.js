@@ -2,9 +2,7 @@ import Carousol from '@/components/carousel'
 import Feature from '@/components/Feature'
 import Techsupport from '@/pages/techsupport'
 import Head from 'next/head'
-
-
-
+// import Narvbar from '@/components/Narvbar'
 
 
 
@@ -18,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      <div>
+      {/* <Narvbar/> */}
       <Feature/>
      </div>
      <div id='techsupport'>

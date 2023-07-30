@@ -30,7 +30,7 @@ const managedservices = () => {
         <div className='md:w-[50%]  w-full flex justify-center mx-3 items-center flex-col'>
           <div>
             <h1 className='text-2xl font-bold '>An Entire Managed IT Team at Your Side</h1>
-            <p className='font-semibold mt-5 mb-5'>Each SmartSoft Business client receives the support of a dedicated team of IT consultants. And with the backing of over 100 technicians across the West, there’s no technology problem that we can’t handle.</p>
+            <p className='font-semibold mt-5 mb-5'>Each Smart IT business solutions client receives the support of a dedicated team of IT consultants. And with the backing of over 100 technicians across the West, there’s no technology problem that we can’t handle.</p>
             <p className='text-gray-500'>All of our IT services include :</p>
             <div className='font-bold space-y-3'>
               <p className='flex flex-row space-x-2 '>
@@ -68,7 +68,7 @@ const managedservices = () => {
       <Carousel/>
 
       <div className='min-h-[500px] mt-10 justify-center space-y-28 items-center w-full flex flex-col '>
-        <h1 className='font-extrabold text-4xl'>SmartSoft Business by the Numbers</h1>
+        <h1 className='font-extrabold text-4xl'>Smart IT business solutions by the Numbers</h1>
         <div className='flex md:flex-row flex-col  gap-y-20 gap-x-5 w-full justify-around items-center'>
           <div className='space-y-5 flex flex-col items-center'>
             <div className='bg-gradient-to-r space-y-3 from-purple-500/50 to-pink-500/50 w-[100px] rounded-full flex justify-center items-center h-[100px]'><Image alt="" src="/img/icons8-handshake-68.png" width={50} height={50}/></div>

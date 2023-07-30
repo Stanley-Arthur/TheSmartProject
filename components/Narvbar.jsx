@@ -5,38 +5,62 @@ import Link from 'next/link'
 import {ImOffice} from "react-icons/im"
 
 
-
-
-const Banner = () => {
+const Narvbar = () => {
     const [heading, setHeading] = useState("");
     const [subHeading, setSubHeading] = useState("");
 
     const menus=[
-        {title:"Our Offices",icon:<ImOffice size={25}/>,submenu:true,
+        {title:"Home", path:"/"},
+        {title:"Services",submenu:true,
         subItems:[
-          {Head: "Corporate Office", subItems:[
+         {Head: "Infrastructure Services", subItems:[
+           {title:"Network",  path:"/network"},
+           {title:"WiFi Services",  path:"/wifi"},
+           {title:"Helpdesk", path:"/helpdesk" },
+           {title:"Operating System",  path:"/os"},
+         ]},
+         {Head: "Cyber Security Services", subItems:[
+           {title:"Cloud Migration(Azure)", path:"/" },
+           {title:"End Point Security", path:"/" },
+           {title:"Web Security",  path:"/"},
+           {title:"Email Security", path:"/" },
+           {title:"Application Security", path:"/" },
+         ]},
+         {Head: "Cloud Services", subItems:[
+           {title:"Office 365",  path:"/" },
+           {title:"Hybrid Cloud",  path:"/" },
+           {title:"Private Cloud Solution",  path:"/" },
+         ]},
+         {Head: "Development", subItems:[
+           {title:"Systems Automation",  path:"/" },
+           {title:"API Integration",  path:"/"},
+           {title:"Software Development",  path:"/"},
+         ]},
+       ]
+     },
+        {title:"Smart Discover",  path:"/discover" },
+        {title:"Tech Support",  path:"#techsupport" },
+        {title:"Our Offices",submenu:true,
+        subItems:[
+          {Head: "Corp Office", subItems:[
             {title:"13428 Timber Crest Dr", },
-            {title:"1200p Guelph Cir", },
-            {title:"Maple Grove MN 55311", },
-           
           ]},
           {Head: "Atlanta Office", subItems:[
             {title:"Hampton Ga 30228", },
-         
           ]},
           {Head: "Ghana Office", subItems:[
             {title:"St John, Achimota Accra", },
-         
           ]},
         ]
       },
+      {title:"Contact",  path:"/contact"},
 
     ]
  
 
   return (
-    <div className=''>
-        <div className='flex justify-between   item-center flex-grow   gap-6 bg-white max-w-7xl px-20 mx-auto h-32'>
+    <div className='fixed w-full font-normal h-20 mt-20 shadow-xl z-[100] bg-white'>
+        <div className='flex xl:justify-around justify-between  items-center w-full h-full  px-2 2xl:px-16'>
           
             <div className='flex '>
 
@@ -46,30 +70,32 @@ const Banner = () => {
                             <div className="px-3 text-left md:cursor-pointer group">
                                 <div className=' inline-flex  items-center'>
                                     {menu.icon}
-                                    <h1 className='py-7 flex  pl-2 justify-between  text-xl  font-semibold text-blue-500 items-center md:pr-0 pr-5 group'>
-                                        {menu.title}
-                                    </h1>
-
+                                    <a href={menu.path} className='py-7 flex  pl-2 justify-between  text-xl  hover:text-blue-500 text-black items-center md:pr-0 pr-5 group'>{menu.title} </a>
                                 </div>
                                
                                 {
                                     menu.submenu && (
                                         <div>
-                                            <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
+                                            <div className="absolute top-14 hidden group-hover:md:block hover:md:block">
                                                 <div className='py-3'>
-                                                    <div className=' w-4 h-4 left-3 absolute mt-1 bg-blue-400  rotate-45'></div>
+                                                    <div className=' w-4 h-4 left-3 absolute mt-1  rotate-45'></div>
                                                 </div>
-                                                <div className="bg-blue-400 p-5 grid grid-cols-3 gap-10">
+                                                <div className="bg-white p-5 grid grid-cols-4 gap-10">
                                                     {
                                                         menu.subItems.map(( mysubItems)=>(
                                                             <div className='text-white'>
-                                                                <h1 className="text-xl  hover:text-blue-900 font-semibold">
+                                                                <h1 className="text-xl border-b pb-4 text-black font-semibold">
                                                                     {mysubItems.Head}
                                                                 </h1>
                                                                 {mysubItems.subItems.map((sitems)=>(
-                                                                    <li className=" text-lg font-bold hover:text-white text-blue-900 my-2.5">
-                                                                        {sitems.title}
-                                                                    </li>
+                                                                    <div className=" mt-3 pb-2">
+                                                                        <a href={sitems.path}  className=" hover:text-blue-600 text-lg my-5 text-black">
+                                                                         {sitems.title}
+                                                                        </a>
+                                                        
+
+                                                                    </div>
+                                                                 
                                                                 ))}
                                                             </div>
                                                         ))
@@ -92,20 +118,20 @@ const Banner = () => {
                         <p className='text-black/30'>Monday - Friday</p>
                     </div> */}
                 </div>
-                <div className='text-black flex  gap-2 ml-10 mr-14 justify-center items-center'>
+                {/* <div className='text-black flex  gap-2 ml-10 mr-14 justify-center items-center'>
                     <div>
                     <AiOutlineMail size={25}/>
                     </div>  
                     <div className='flex-col hover:cursor-pointer text-blue-400 text-lg'>
-                        {/* <a>
+                        <a>
                           <Link target="_blank" href="https://twitter.com/" >twitter</Link>
-                        </a> */}
+                        </a>
                         
                         <p className=' '>Email: info@smartitbs.com </p>
-                        {/* <a href='https://smartitbs.com/'>Website: www.smartitbs.com </a> */}
+                        <a href='https://smartitbs.com/'>Website: www.smartitbs.com </a>
                     </div>
-                </div>
-                <div className='text-black  hover:cursor-pointer flex gap-2 ml-8 justify-center items-center'>
+                </div> */}
+                {/* <div className='text-black  hover:cursor-pointer flex gap-2 ml-8 justify-center items-center'>
                     <div>
                     <AiOutlineMobile size={25}/>
                     </div>
@@ -113,7 +139,7 @@ const Banner = () => {
                         <p>Office: 770-686-7390</p>
                         <p className='text-black'>Fax: 770-686-7391</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>
@@ -121,4 +147,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default Narvbar

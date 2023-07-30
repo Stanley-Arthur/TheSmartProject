@@ -43,29 +43,29 @@ const Featured = () => {
              <h1 className='uppercase'>Get in Touch </h1>
             </div>
             <div className='flex md:flex-row flex-col absolute gap-x-20 mx-10 justify-center items-center  top-[40%] left-[20%]'>
-                <div className='flex flex-col  bg-black/70 w-96 h-96 items-center justify-center '>
+                <div className='flex flex-col  bg-black/70  w-80 h-80 items-center justify-center '>
                     <div className='flex rounded-full bg-gray-500/80 w-14 h-14 items-center justify-center text-gray-500 hover:text-white '> 
                         <GoLocation size={25} className='w-36 animate-bounce pr-2 text-yellow-300'/>    
                     </div>
                     <h1 className='uppercase text-white my-4 font-semibold'>Location</h1>
-                    <div className='flex justify-center gap-y-3 items-center flex-col'>
+                    <div className='flex justify-center  items-center flex-col'>
+                       <h1>Corporate Office</h1>
                         <div className='text-white space-y-4 font-semibold justify-center items-center flex flex-col'>
-                            <p>Locate us at Achimota, Opposite St.Johns School</p>
-                            <p>Last floor of the EcoBank Building</p>
-                            <p>First junction of the 3rd Street 234</p>
+                            <p>13428 Timber Crest Dr</p>
+                            <p>Maple Grove MN 55311</p>
+                            <p>1200p Guelph Cir</p>
                         </div>
                     </div>
                 </div>
-                <div className=' hidden md:block md:flex flex-col  bg-black/70 w-96 h-96 items-center justify-center '>
+                <div className=' hidden md:block md:flex flex-col  bg-black/70  w-80 h-80 items-center justify-center '>
                     <div className='flex rounded-full bg-gray-500/80 w-14 h-14 items-center justify-center text-gray-500 hover:text-white '> 
                         <AiFillPhone size={25} className='w-36 animate-bounce pr-2 text-yellow-300'/>    
                     </div>
                     <h1 className='uppercase text-white my-4 font-semibold'>phone</h1>
                     <div className='flex justify-center gap-y-3 items-center flex-col'>
                         <div className='text-white space-y-4 font-semibold justify-center items-center flex flex-col'>
-                            <p>Interested in SmartSoft Services?pick up the phone</p>
-                            <p>to chat with a member of our sales teams</p>
-                            <p>Tel: 678-554-8811</p>
+                            <p>Office: 770-686-7390</p>
+                            <p>Fax: 770-686-7391</p>
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const CloudCard = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
-        <div className=' max-w-[90%] pt-20 mx-[5%] items-center gap-x-10  gap-y-10 grid md:grid-cols-2 lg:grid-cols-3   '>
+        <div className=' max-w-[90%]  mx-[5%] items-center  gap-x-16 gap-y-10 grid md:grid-cols-2 lg:grid-cols-3'>
             <div className='flex  flex-col shadow-lg  cursor-pointer px-8 hover:scale-105  duration-500 bg-white rounded-lg h-80 w-80  '>
                 <div className='flex flex-col mx-4 my-5'>
                     <div className='text-white rounded-full w-16 h-16 flex items-center justify-center'>  

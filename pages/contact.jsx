@@ -68,8 +68,8 @@ export default function Contact(){
         type="text"
         errorBorderColor="red.300"
         onBlur={onBlur}
-        name="name" onChange={handleChange} className="border p-3 w-[300px] bg-gray-900 text-white" value={values.name}/>
-        <FormErrorMessage className="text-red-300">Required</FormErrorMessage>
+        name="name" onChange={handleChange} className="border p-3 md:w-[400px] w-[300px] bg-gray-900 text-white" value={values.name}/>
+        {/* <FormErrorMessage className="text-red-300">Required</FormErrorMessage> */}
       </FormControl>
  
       <FormControl  isRequired isInvalid={touched.email && values.email}>
@@ -78,8 +78,8 @@ export default function Contact(){
         type="email"
         errorBorderColor="red.300"
         onBlur={onBlur}
-        name="email" onChange={handleChange} className="border p-3 w-[300px] bg-gray-900 text-white" value={values.email}/>
-        <FormErrorMessage className="text-red-300">Required</FormErrorMessage>
+        name="email" onChange={handleChange} className="border p-3 md:w-[400px] w-[300px] bg-gray-900 text-white" value={values.email}/>
+        {/* <FormErrorMessage className="text-red-300">Required</FormErrorMessage> */}
       </FormControl>
 
       <FormControl  isRequired isInvalid={touched.subject && values.subject}>
@@ -88,8 +88,8 @@ export default function Contact(){
         type="text"
         errorBorderColor="red.300"
         onBlur={onBlur}
-        name="subject" onChange={handleChange} className="border p-3 w-[300px]  bg-gray-900 text-white" value={values.subject}/>
-        <FormErrorMessage className="text-red-300">Required</FormErrorMessage>
+        name="subject" onChange={handleChange} className="border p-3 w-[300px] md:w-[400px] bg-gray-900 text-white" value={values.subject}/>
+        {/* <FormErrorMessage className="text-red-300">Required</FormErrorMessage> */}
       </FormControl>
 
       <FormControl  isRequired isInvalid={touched.message && values.message}>
@@ -99,10 +99,10 @@ export default function Contact(){
         errorBorderColor="red.300"
         onBlur={onBlur}
         rows={4}
-        name="message" onChange={handleChange} className="border  p-3 w-[300px] bg-gray-900 text-white" value={values.message}/>
-        <FormErrorMessage className="text-red-300">Required</FormErrorMessage>
+        name="message" onChange={handleChange} className="border  p-3 w-[300px] md:w-[400px] bg-gray-900 text-white" value={values.message}/>
+        {/* <FormErrorMessage className="text-red-300">Required</FormErrorMessage> */}
       </FormControl>
-      <Button  className="border w-[100px] text-white font-bold p-2 rounded-lg " onClick ={onSubmit} isLoading={isLoading}
+      <Button  className="border w-[300px] uppercase md:w-[400px] text-white font-bold p-2 rounded-lg " onClick ={onSubmit} isLoading={isLoading}
        disabled={!values.name|| !values.email || !values.subject || !values.message}
       >
         Submit

@@ -42,7 +42,7 @@ const Feature = () => {
       className="duration-1000  ease-in-out transition-opacity"
       >
         <SwiperSlide className='object-center w-80 h-80 bg-cover relative'>
-          <Image src="/img/ju.jpg" alt="" className='w-full h-screen' width={1000} height={1000} />
+          <Image src="/img/com.jpg" alt="" className='w-full h-screen' width={1000} height={1000} />
           
           <div className='flex  flex-col cursor-pointer py-10 px-10  bg-black/50 text-white h-62 w-96 absolute top-[45%] md:top-[34%] md:right-[15%]  '>
             
@@ -71,7 +71,7 @@ const Feature = () => {
           
         </SwiperSlide >
         <SwiperSlide className='object-center w-80 h-80 bg-cover  '>
-          <Image width={1000} height={1000} src="/img/kate.jpg" alt="" className='w-full h-screen' />
+          <Image width={1000} height={1000} src="/img/na.jpg" alt="" className='w-full h-screen' />
           <div className='flex  flex-col cursor-pointer py-10 px-10 bg-black/50 text-white h-62 w-96 absolute top-[45%] md:top-[34%] md:left-[20%] '>
             
             <div className='font-sans text-2xl font-bold'> 
@@ -100,7 +100,7 @@ const Feature = () => {
 
         </SwiperSlide>
         <SwiperSlide className='object-center w-80 h-80 bg-cover '>
-          <Image width={1000} height={1000} src="/img/damir.jpg" alt="" className='w-full h-screen' />
+          <Image width={1000} height={1000} src="/img/sa.jpg" alt="" className='w-full h-screen' />
           <div className='flex  flex-col cursor-pointer py-10 px-10 bg-black/50 text-white h-62 w-96 absolute top-[45%] md:top-[34%] md:right-[20%] '>
             
             <div className='font-sans text-2xl font-bold'> 

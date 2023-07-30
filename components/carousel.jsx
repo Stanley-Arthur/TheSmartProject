@@ -14,7 +14,7 @@ SwiperCore.use([EffectCoverflow, Pagination, Autoplay, EffectFade]);
 
 const Carousel = () => {
   return (
-    <div className="relative">
+    <div className="relative hover:cursor-default">
       <h1 className="absolute top-5 left-[40%] uppercase font-extrabold text-2xl hidden md:block">
         see what our clients say
       </h1>
@@ -28,12 +28,12 @@ const Carousel = () => {
         <SwiperSlide className="w-96 h-96 gap-y-10 pt-10 text-xl flex flex-col justify-center items-center relative">
           <div className="min-w-[800px] text-gray-500 mx-52">
             <h1>
-              &ldquo;In a world where technology and security threats change at the speed of light, I have confidence that through SmartSoft Business, the city is on top of this rapid evolution.&rdquo;
+              &ldquo;In a world where technology and security threats change at the speed of light, I have confidence that through Smart IT Business Solutions, the city is on top of this rapid evolution.&rdquo;
             </h1>
           </div>
           <div className="flex flex-col items-center">
-            <h2 className="font-bold text-xl">James Smith</h2>
-            <p className="text-gray-500">Dome Kwabenya</p>
+            <h2 className="font-bold text-xl">James Cooper</h2>
+            <p className="text-gray-500">Austin Texas</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-80 h-96 gap-y-10 text-xl pt-10 flex flex-col justify-center items-center relative">
@@ -44,7 +44,7 @@ const Carousel = () => {
           </div>
           <div className="flex flex-col items-center">
             <h2 className="font-bold text-xl">Jones Bonfe</h2>
-            <p className="text-gray-500">Mile 11, Street 14</p>
+            <p className="text-gray-500">Nederland, Texas</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-80 h-96 gap-y-10 text-xl pt-10 flex flex-col justify-center items-center relative">
@@ -65,8 +65,8 @@ const Carousel = () => {
                     </h1>
                     </div>
                     <div className='flex flex-col items-center'>
-                        <h2 className="font-bold text-xl">Emmanuel Teye</h2>
-                        <p className="text-gray-500">East Legon Hills, street 478</p>
+                        <h2 className="font-bold text-xl">Tamika Sanika</h2>
+                        <p className="text-gray-500">Beaumont, Jefferson County, Texas</p>
                     </div>
 
              

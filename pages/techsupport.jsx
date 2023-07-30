@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 function Techsupport() {
   return (
-    <div className='flex justify-center scroll-smooth pb-20 bg-gray-200 items-center flex-col  '>
+    <div className='flex justify-center hover:cursor-default scroll-smooth pb-20 bg-gray-200 items-center flex-col  '>
         <div className='flex justify-center pl-10 w-[90%] md:w-[50%] my-24 space-y-4 text-xl flex-col items-center'>
-           <div className='uppercase text-2xl font-bold '>
-             <h1>SmartSoft Business Solutions</h1> 
+           <div className='uppercase text-2xl font-extrabold '>
+             <h1>Smart IT business solutions</h1> 
             </div>
           <div className='flex flex-col items-center '>
-            <p>SmartSoft Business Solutions has a proven track record over  <span className='text-violet-900 font-bold'>10 years</span>, we deliver <span className='text-violet-900 font-bold'>reliable</span>, <span className='text-violet-900 font-bold'>well designed</span>, and <span className='text-violet-900 font-bold'>cost effective</span> business technology, communications and support</p>
+            <p>Smart IT business solutions has a proven track record over  <span className='text-violet-900 font-bold'>10 years</span>, we deliver <span className='text-violet-900 font-bold'>reliable</span>, <span className='text-violet-900 font-bold'>well designed</span>, and <span className='text-violet-900 font-bold'>cost effective</span> business technology, communications and support</p>
           </div>
         </div>
     

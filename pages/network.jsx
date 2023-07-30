@@ -6,7 +6,7 @@ import Carousel from '@/components/carousel'
 
 
 
-const cloudservices = () => {
+const Network = () => {
   return (
     <div className='flex justify-center flex-col items-center'>
       <div className="flex flex-col  md:mb-96 pt-20 h-[300px] md:min-h-screen w-full relative">
@@ -72,4 +72,4 @@ const cloudservices = () => {
   }  
 
 
-export default cloudservices
+export default Network
