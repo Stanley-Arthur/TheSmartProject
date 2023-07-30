@@ -59,12 +59,12 @@ const Banner = () => {
                                                 <div className="bg-blue-400 p-5 grid grid-cols-3 gap-10">
                                                     {
                                                         menu.subItems.map(( mysubItems, index)=>(
-                                                            <div key={index} className='text-white'>
-                                                                <h1 className="text-xl  hover:text-blue-900 font-semibold">
+                                                            <div  className='text-white'>
+                                                                <h1 key={index} className="text-xl  hover:text-blue-900 font-semibold">
                                                                     {mysubItems.Head}
                                                                 </h1>
                                                                 {mysubItems.subItems.map((sitems)=>(
-                                                                    <li className=" text-lg font-bold hover:text-white text-blue-900 my-2.5">
+                                                                    <li key={index} className=" text-lg font-bold hover:text-white text-blue-900 my-2.5">
                                                                         {sitems.title}
                                                                     </li>
                                                                 ))}
