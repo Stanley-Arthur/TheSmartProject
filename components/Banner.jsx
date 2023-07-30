@@ -63,7 +63,7 @@ const Banner = () => {
                                                                 <h1 className="text-xl  hover:text-blue-900 font-semibold">
                                                                     {mysubItems.Head}
                                                                 </h1>
-                                                                {mysubItems.subItems.map((sitems)=>(
+                                                                {mysubItems.subItems.map((sitems, index)=>(
                                                                      <div key={sitems.id || index}>
                                                                         <li  className=" text-lg font-bold hover:text-white text-blue-900 my-2.5"> {sitems.title} </li> 
                                                                      </div>
