@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const contactus = () => {
+const Contactus = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -36,4 +36,4 @@ const contactus = () => {
   )
 }
 
-export default contactus
+export default Contactus
