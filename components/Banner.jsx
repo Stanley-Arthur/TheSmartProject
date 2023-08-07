@@ -12,7 +12,7 @@ const Banner = () => {
         {title:"Our Offices",icon:<ImOffice size={25}/>,submenu:true,
         subItems:[
           {Head: "Corporate Office", subItems:[
-            {title:"13428 Timber Crest Dr", },
+            {title:"13428 Timber Crest Dr",},
             {title:"1200p Guelph Cir", },
             {title:"Maple Grove MN 55311", },
            
