@@ -8,27 +8,27 @@ import {ImOffice} from "react-icons/im"
 
 const Banner = () => {
 
-    const menus=[
-        {title:"Our Offices",icon:<ImOffice size={25}/>,submenu:true,
-        subItems:[
-          {Head: "Corporate Office", subItems:[
-            {title:"13428 Timber Crest Dr",},
-            {title:"1200p Guelph Cir", },
-            {title:"Maple Grove MN 55311", },
+    // const menus=[
+    //     {title:"Our Offices",icon:<ImOffice size={25}/>,submenu:true,
+    //     subItems:[
+    //       {Head: "Corporate Office", subItems:[
+    //         {title:"13428 Timber Crest Dr",},
+    //         {title:"1200p Guelph Cir", },
+    //         {title:"Maple Grove MN 55311", },
            
-          ]},
-          {Head: "Atlanta Office", subItems:[
-            {title:"Hampton Ga 30228", },
+    //       ]},
+    //       {Head: "Atlanta Office", subItems:[
+    //         {title:"Hampton Ga 30228", },
          
-          ]},
-          {Head: "Ghana Office", subItems:[
-            {title:"St John, Achimota Accra", },
+    //       ]},
+    //       {Head: "Ghana Office", subItems:[
+    //         {title:"St John, Achimota Accra", },
          
-          ]},
-        ]
-      },
+    //       ]},
+    //     ]
+    //   },
 
-    ]
+    // ]
  
 
   return (
