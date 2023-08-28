@@ -43,7 +43,7 @@ const Featured = () => {
              <h1 className='uppercase'>Get in Touch </h1>
             </div>
             <div className='flex md:flex-row flex-col absolute gap-x-20 mx-10 justify-center items-center  top-[40%] left-[20%]'>
-                <div className='flex flex-col  bg-black/70  w-80 h-80 items-center justify-center '>
+{/*                 <div className='flex flex-col  bg-black/70  w-80 h-80 items-center justify-center '>
                     <div className='flex rounded-full bg-gray-500/80 w-14 h-14 items-center justify-center text-gray-500 hover:text-white '> 
                         <GoLocation size={25} className='w-36 animate-bounce pr-2 text-yellow-300'/>    
                     </div>
@@ -55,7 +55,7 @@ const Featured = () => {
                             <p>Maple Grove MN 55311</p>
                             <p>1200p Guelph Cir</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className=' hidden md:block md:flex flex-col  bg-black/70  w-80 h-80 items-center justify-center '>
                     <div className='flex rounded-full bg-gray-500/80 w-14 h-14 items-center justify-center text-gray-500 hover:text-white '> 
