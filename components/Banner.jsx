@@ -37,7 +37,7 @@ const Banner = () => {
           
             <div className='flex '>
 
-                <div className='text-black flex gap-2  justify-center items-center'>
+{/*                 <div className='text-black flex gap-2  justify-center items-center'>
                     {menus.map((menu, index)=>(
                         <div  key={menu.id || index}>
                             <div className="px-3 text-left md:cursor-pointer group">
@@ -80,7 +80,7 @@ const Banner = () => {
                                 }
                             </div>
                         </div>
-                    ))}
+                    ))} */}
                  {/*    <div>
                     <AiOutlineClockCircle size={25}/>
                     </div>
