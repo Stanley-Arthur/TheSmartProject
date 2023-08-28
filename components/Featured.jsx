@@ -53,7 +53,7 @@ const Featured = () => {
                         <div className='text-white space-y-4 font-semibold justify-center items-center flex flex-col'>
                             <p>13428 Timber Crest Dr</p>
                             <p>Maple Grove MN 55311</p>
-                            <p>1200p Guelph Cir</p>
+{/*                             <p>1200p Guelph Cir</p> */}
                         </div>
                     </div>
                 </div>
