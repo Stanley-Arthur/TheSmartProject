@@ -9,7 +9,7 @@ import {ImOffice} from "react-icons/im"
 const Banner = () => {
 
     const menus=[
-        {title:"",submenu:true,
+        {title:"OurOffice",submenu:true,
         subItems:[
           {Head: "Corporate Office", subItems:[
             {title:"13428 Timber Crest Dr",},
