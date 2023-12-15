@@ -21,9 +21,6 @@ const Banner = () => {
             {title:"Hampton Ga 30228", },
          
           ]},
-          {Head: "Ghana Office", subItems:[
-            {title:"St John, Achimota Accra", },
-          ]},
         ]
       },
     ]
